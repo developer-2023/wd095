@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 1px dashed red;
+            gap: 5px;
+        }
+        .flex-container div {
+            height: 50px;
+            width: 50px;
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+
+        }
+        .first {
+            order: 1;
+            background-color: darkblue;
+        }
+        .second {
+            order: 2;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="second">2</div>
+        <div class="first">3</div>
+        <div>4</div>
+        <div class="first">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
